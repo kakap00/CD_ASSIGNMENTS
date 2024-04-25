@@ -1,0 +1,17 @@
+| Operator   | Argument 1 | Argument 2 | Result     |
+| >          | c          | d          | t1         |
+| if         | t1         |            | L1         |
+| goto       |            |            | L2         |
+| Label      |            |            | L1         |
+| Label      |            |            | L3         |
+| +          | a          | 1          | t2         |
+| =          | t2         | NULL       | a          |
+| >          | a          | b          | t3         |
+| if         | t3         |            | L3         |
+| goto       |            |            | L4         |
+| Label      |            |            | L4         |
+| =          | a          | NULL       | b          |
+| goto       |            |            | L5         |
+| Label      |            |            | L2         |
+| =          | dfg        | NULL       | fdg        |
+| Label      |            |            | L5         |
